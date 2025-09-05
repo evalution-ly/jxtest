@@ -30,16 +30,20 @@ jxRequirements:
     provider: minikube
   environments:
   - key: dev
+    owner: evalution-ly
+    repository: jxtest
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: 192.168.0.143.nip.io
     kind: ingress
     namespaceSubDomain: -tekton-pipelines.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: evalution-ly
   repository: bucketrepo
   secretStorage: local
   vault: {}

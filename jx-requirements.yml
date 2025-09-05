@@ -14,6 +14,8 @@ spec:
     provider: minikube
   environments:
   - key: dev
+    owner: evalution-ly
+    repository: jxtest
   - key: staging
   - key: production
   ingress:
@@ -24,6 +26,8 @@ spec:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: evalution-ly
   repository: bucketrepo
   secretStorage: local
   vault: {}
