@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: evalution-ly
+    provider: github
+    repository: sptest6
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: evalution-ly-sptest6
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/evalution-ly/sptest6.git
+  org: evalution-ly
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: sptest6
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/evalution-ly/sptest6
