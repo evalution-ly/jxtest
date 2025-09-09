@@ -9,6 +9,7 @@ data:
       enabled:
         evalution-ly/jxtest: true
         evalution-ly/sptest6: true
+        evalution-ly/sptest7: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -22,6 +23,7 @@ data:
       merge_method:
         evalution-ly/jxtest: merge
         evalution-ly/sptest6: merge
+        evalution-ly/sptest7: merge
       queries:
       - labels:
         - approved
@@ -34,6 +36,7 @@ data:
         repos:
         - evalution-ly/jxtest
         - evalution-ly/sptest6
+        - evalution-ly/sptest7
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - evalution-ly/jxtest
         - evalution-ly/sptest6
+        - evalution-ly/sptest7
       target_url: http://lighthouse-jx.192.168.0.143.nip.io/merge/status
 kind: ConfigMap
 metadata:
